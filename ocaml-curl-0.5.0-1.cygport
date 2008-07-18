@@ -1,0 +1,15 @@
+ORIG_PN="ocurl"
+
+inherit ocaml
+
+DESCRIPTION="OCaml cURL bindings"
+HOMEPAGE="http://sourceforge.net/projects/ocurl/"
+SRC_URI="mirror://sourceforge/${ORIG_PN}/${ORIG_PN}-${PV}.tgz"
+SRC_DIR="${ORIG_PN}"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf --with-findlib
+	cygmake -j1
+}

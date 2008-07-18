@@ -4,15 +4,14 @@ The Ocaml Curl Library (Ocurl) is an interface library for the
 programming language Ocaml to the networking library cURL.
 
 Runtime requirements:
-  cygwin-1.5.25-7
+  cygwin-1.5.25-15
   libcurl4-7.16.3-1
-  ocaml-3.10.0-1
+  ocaml-3.10.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.25-7
-  binutils-20060817-1
-  cygport-0.3.8-1
+  binutils-20080523-2
+  cygport-0.3.12-1
   gcc-core-3.4.4-3
   make-3.81-1
   ocaml-findlib-1.2.1-1
@@ -26,15 +25,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ocaml-curl-0.2.1-X-src.tar.bz2
+  unpack ocaml-curl-0.5.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ocaml-curl-0.2.1-X.cygport all
+  cygport ./ocaml-curl-0.5.0-X.cygport all
 
 This will create:
-  /usr/src/ocaml-curl-0.2.1-X-src.tar.bz2
-  /usr/src/ocaml-curl-0.2.1-X.tar.bz2
+  /usr/src/ocaml-curl-0.5.0-X-src.tar.bz2
+  /usr/src/ocaml-curl-0.5.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -49,11 +48,14 @@ Files included in the binary package:
   /usr/lib/ocaml/3.10/curl/libcurl-helper.a
   /usr/lib/ocaml/3.10/stublibs/dllcurl-helper.so
   /usr/lib/ocaml/3.10/stublibs/dllcurl-helper.so.owner
-  /usr/share/doc/ocaml-curl-0.2.1/COPYING
+  /usr/share/doc/ocaml-curl-0.5.0/COPYING
 
 ------------------
 
 Port Notes:
+
+----- version 0.5.0-1 -----
+Version bump.
 
 ----- version 0.2.1-1 -----
 Initial release for Cygwin.
