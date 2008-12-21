@@ -5,6 +5,8 @@ inherit ocaml
 DESCRIPTION="OCaml cURL bindings"
 HOMEPAGE="http://sourceforge.net/projects/ocurl/"
 SRC_URI="mirror://sourceforge/${ORIG_PN}/${ORIG_PN}-${PV}.tgz"
+PATCH_URI="0.5.0-dllso.patch"
+
 SRC_DIR="${ORIG_PN}"
 
 src_compile() {

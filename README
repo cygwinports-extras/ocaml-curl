@@ -10,8 +10,8 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding -devel packages)
-  binutils-20080523-2
-  cygport-0.3.12-1
+  binutils-20080624-2
+  cygport-0.4.3-1
   gcc-core-3.4.4-3
   make-3.81-1
   ocaml-findlib-1.2.1-1
@@ -25,15 +25,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ocaml-curl-0.5.0-X-src.tar.bz2
+  unpack ocaml-curl-0.5.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ocaml-curl-0.5.0-X.cygport all
+  cygport ./ocaml-curl-0.5.1-X.cygport all
 
 This will create:
-  /usr/src/ocaml-curl-0.5.0-X-src.tar.bz2
-  /usr/src/ocaml-curl-0.5.0-X.tar.bz2
+  /usr/src/ocaml-curl-0.5.1-X-src.tar.bz2
+  /usr/src/ocaml-curl-0.5.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -48,11 +48,14 @@ Files included in the binary package:
   /usr/lib/ocaml/3.10/curl/libcurl-helper.a
   /usr/lib/ocaml/3.10/stublibs/dllcurl-helper.so
   /usr/lib/ocaml/3.10/stublibs/dllcurl-helper.so.owner
-  /usr/share/doc/ocaml-curl-0.5.0/COPYING
+  /usr/share/doc/ocaml-curl-0.5.1/COPYING
 
 ------------------
 
 Port Notes:
+
+----- version 0.5.1-1 -----
+Version bump.
 
 ----- version 0.5.0-1 -----
 Version bump.
