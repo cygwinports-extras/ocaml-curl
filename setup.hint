@@ -1,5 +1,0 @@
-category: OCaml Net
-requires: ocaml-base libcurl4 libcurl-devel
-sdesc: "OCaml cURL bindings"
-ldesc: "The Ocaml Curl Library (Ocurl) is an interface library for the 
-programming language Ocaml to the networking library cURL."

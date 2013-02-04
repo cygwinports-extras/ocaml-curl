@@ -1,0 +1,11 @@
+--- origsrc/ocurl-0.5.4/Makefile.in	2013-01-28 19:27:36.000000000 -0600
++++ src/ocurl-0.5.4/Makefile.in	2013-02-03 22:37:56.394528700 -0600
+@@ -25,7 +25,7 @@ CURLHELPEROBJS	= curl-helper.o
+ CURLOBJS	= curl.cmx
+ CURLBCOBJS	= $(CURLOBJS:.cmx=.cmo)
+ 
+-CLIBS = @CURLLIBS@
++CLIBS = @CURLFLAGS@
+ 
+ ifeq (@OCAMLBEST@,opt)
+ TARGETS		= curl.cma curl.cmxa libcurl-helper.a dllcurl-helper.so

@@ -1,0 +1,20 @@
+inherit ocaml
+
+NAME="ocaml-curl"
+VERSION=0.5.4
+RELEASE=1
+CATEGORY="OCaml"
+SUMMARY="OCaml cURL bindings"
+DESCRIPTION="The Ocaml Curl Library (Ocurl) is an interface library for the
+programming language Ocaml to the networking library cURL."
+HOMEPAGE="http://ocurl.forge.ocamlcore.org/"
+SRC_URI="https://forge.ocamlcore.org/frs/download.php/1106/ocurl-${VERSION}.tar.gz"
+SRC_DIR="ocurl-${VERSION}"
+PATCH_URI="0.5.4-no-undefined.patch"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake -j1
+}
