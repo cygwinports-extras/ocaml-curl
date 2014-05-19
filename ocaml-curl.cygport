@@ -2,7 +2,7 @@ inherit ocaml
 
 NAME="ocaml-curl"
 VERSION=0.6.0
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="OCaml cURL bindings"
 DESCRIPTION="The Ocaml Curl Library (Ocurl) is an interface library for the
